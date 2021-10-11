@@ -1,0 +1,403 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+
+}
+.col {
+    float: left;
+    padding-left:8px ;
+    padding-right:8px ;
+
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.3333333%;
+}
+
+.tour-while {
+    color: white !important;
+}
+
+html {
+    font-family:Arial, Helvetica, sans-serif;
+    overflow: auto;
+    height: 3000px;
+}
+
+#header {
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    height: 46px;
+    background-color: #000;
+    font-size: 15px;
+    z-index: 1;
+}
+
+#nav > li {
+    float: left;
+    list-style: none; 
+    position: relative; 
+}
+
+#nav .subnav {
+    display: none;
+}
+
+#nav li a {
+    line-height: 46px;
+    text-decoration: none;
+    color: white;
+    padding: 0 22px;
+}
+
+#nav > li >a {
+    text-transform: uppercase;
+}
+
+#nav .subnav li {
+    list-style-type: none;
+    background-color: #fff;
+    width: 160px;
+    
+}
+
+#nav .subnav {
+    top: 100%;
+    position: absolute;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+}
+
+#nav .subnav a {
+    color: black;
+    padding: 0 16px;  
+    line-height: 38px;
+}
+
+#nav > li:hover > a {
+    color: black;
+    background-color:#ccc;
+    display: block;
+}
+
+.subnav li a:hover{
+    background-color: #ccc;
+    display:block;
+}
+
+#nav > li:hover ul.subnav {
+    display: block;
+}
+
+#header #nav .down-icon {
+    text-indent: -2px;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 15px;
+    line-height: 46px;
+    float: right;
+    padding: 0 24px;
+}
+
+#header .search:hover .search-icon  { 
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header {
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+}
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('./img/chicago.jpg') top center / cover no-repeat;
+    
+}
+
+#slider .text-content {
+    display: inline-block;
+    color: #fff;
+    position: absolute;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+    font-weight: 700;
+}
+
+#content .content-section {
+    max-width: 800px;
+    padding: 80px 0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+
+}
+#content .section-heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    font-weight: 200;
+}
+
+#content .section-sub-heading {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 25px;
+    font-style: italic;
+    opacity: .5;
+}
+
+#content .about-text {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.45;
+}
+
+#content .member-item {
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+    
+}
+
+#content .members-list {
+    margin-top: 47px;
+    overflow: hidden;
+}
+
+#content .name-member {
+    font-size:15px;
+    margin: 15px 0;
+}
+
+#content .member-img {
+    width:154px ;
+    margin-top: 15px;
+    border-radius: 5px 5px;
+}
+
+/*Tour */
+.tour-section {
+    background-color: black;
+    overflow: hidden;
+    height: 841px;
+}
+
+.tickets-list {
+    background-color: #fff;
+    color: #757575;
+    list-style-type: none;
+    line-height: 22px;
+    margin-top: 35px;
+}
+
+.tickets-list .sold-out {
+    background-color: #f44336;
+    color: white;
+    padding: 3px 8px;
+    margin-left: 16px;
+    height: 24px;
+    font-size: 15px;
+}
+
+.tickets-list .so3 {
+    float: right;
+    height: 22px;
+    background-color: black;
+    font-style: normal;
+    color: white;
+    border-radius: 50% ;
+    padding: 0 8px;
+    margin-right: 16px;
+}
+
+.tickets-list li {
+    font-size: 15px;
+    padding: 8px 16px;
+    border-bottom:1px solid #ccc ;
+    height: 39px;
+}
+
+/*   Place  */
+
+.places-list {
+    margin-top: 32px;
+    margin-right: -8px;
+    margin-left: -8px;
+    
+}
+
+.place-item {
+    float: left;
+    width: 33.3333%;
+    padding: 0 8px;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+
+}
+
+.place-body {
+    background-color: #fff;
+    color: black;
+    font-size: 15px;
+    padding: 0 16px;
+    
+}
+
+.place-name {
+    font-weight: 700;
+    padding: 15px 0;
+    font-size: 15px;
+}
+
+.place-date {
+    opacity: 0.5;
+    line-height: 22x;
+    margin-top: 15px;    
+    color: #757575;
+}
+
+.place-description {
+    line-height: 44x;
+    margin-top: 15px;
+    line-height: 1.4;
+
+}
+
+.place-buy-btn {
+    height: 38px;
+    background-color: black;
+    padding: 11px 16px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.place-buy-btn:hover {
+    background-color: #ccc;
+    color: black;
+}   
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+
+/*Contect */
+.contact-content {
+    margin-top: 48px;
+    
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 200;
+}
+
+
+.contact-info i {
+    width: 30px;   
+    
+}    
+
+.contact-form {
+    font-size: 15px;
+}    
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+
+}
+
+.clear {
+    clear: both;
+}
+
+.message {
+    margin-top: 8px;
+}
+
+input[type=submit] {
+    float: right;
+    margin: 16px 0;
+    padding: 10px 18px;
+    background-color: black;
+    border: 0px solid;
+    color: white;
+}
+
+input[type=submit]:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.map {
+    width: 100%;
+    background-size: cover;
+}
+
+
+
+.icon {
+    font-size: 22px;
+    color: black ;
+    opacity: 0.6;
+}
+
+.icon a {
+    color: black;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.text-footer {
+    margin: 20px 0;
+    font-size: 15px ;
+
+}
+
+.icon > a:hover {
+    opacity: 0.8;
+}
